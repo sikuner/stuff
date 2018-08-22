@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试项配置:请勾选需要测试的项目,保存后重新打开!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/ckbOperation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="1.操作录入" />
+
+            <CheckBox
+                android:id="@+id/ckbVersion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="3.版本信息" />
+
+            <CheckBox
+                android:id="@+id/ckbSdCard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="5.SD卡读写测试" />
+
+            <CheckBox
+                android:id="@+id/ckbUsb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="7.USB接口测试" />
+
+            <CheckBox
+                android:id="@+id/ckbHeadset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="9.耳机音频测试" />
+
+            <CheckBox
+                android:id="@+id/ckbEthernet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="11以太网测试" />
+
+            <CheckBox
+                android:id="@+id/ckbSerialPort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="13.RS232串口测试" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/ckbFpanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="2.前面板测试" />
+
+            <CheckBox
+                android:id="@+id/ckbSim"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="4.SIM卡测试" />
+
+            <CheckBox
+                android:id="@+id/ckbSataDisk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="6.SATA硬盘测试" />
+
+            <CheckBox
+                android:id="@+id/ckbScreenDisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="8.屏幕显示测试" />
+
+            <CheckBox
+                android:id="@+id/ckbWifi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="10.WIFI测试" />
+
+            <CheckBox
+                android:id="@+id/ckbGpio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="12.GPIO测试" />
+
+            <CheckBox
+                android:id="@+id/ckbRs485"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="14.RS485串口测试" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

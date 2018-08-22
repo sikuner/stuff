@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioButton
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="1./dev/ttymxc2"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:id="@+id/itemNotes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemName"
+        android:layout_toLeftOf="@+id/itemResult" >
+
+        <TextView
+            android:id="@+id/itemNote1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/itemName"
+            android:layout_weight="1"
+            android:text="备注备注1"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/itemNote2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/itemName"
+            android:layout_weight="1"
+            android:text="备注备注2"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/itemNote3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/itemName"
+            android:layout_weight="1"
+            android:text="备注备注3"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/itemNote4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/itemName"
+            android:layout_weight="1"
+            android:text="备注备注4"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemNotes"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/itemName"
+        android:text="成功"
+        android:textSize="20dp" />
+
+</RelativeLayout>

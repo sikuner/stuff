@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#66666666"
+        android:gravity="center_vertical|left"
+        android:text="操作录入"
+        android:textColor="#ffffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvDescribe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="录入 操作员, 序列号, 工    序" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout2" >
+
+            <TextView
+                android:id="@+id/tvOperator"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="操作员:" />
+
+            <EditText
+                android:id="@+id/etOperator"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:hint="liguowang"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tvBoardSN"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/etBoardSN"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout2" >
+
+            <TextView
+                android:id="@+id/tvProcedure"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="工　序:" />
+
+            <EditText
+                android:id="@+id/etProcedure"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:hint="功能测试"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="I" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="I" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout4" >
+
+            <TextView
+                android:id="@+id/tvBoardLbl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2.7"
+                android:gravity="center"
+                android:text="主板序列号:" />
+
+            <EditText
+                android:id="@+id/etBoardSN1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:hint="主板序列号"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnRead1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="读出" />
+            <Button
+                android:id="@+id/btnSave1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+            <Button
+                android:id="@+id/btnWrite1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="写  入" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout5" >
+
+            <TextView
+                android:id="@+id/tvComputerLbl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2.7"
+                android:gravity="center"
+                android:text="整机序列号:" />
+
+            <EditText
+                android:id="@+id/etComputerSN"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:hint="整机序列号"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnRead2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="读出" />
+            <Button
+                android:id="@+id/btnSave2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+            <Button
+                android:id="@+id/btnWrite2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="写  入" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout6"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="l" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout7"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center|left"
+                android:layout_weight="8"
+                android:gravity="center|left"
+                android:text="注意：序列号写入之后需要重启才能在系统中读取到" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#66666666"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPass"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnPass" />
+
+        <Button
+            android:id="@+id/btnFail"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnFail" />
+    </LinearLayout>
+
+</LinearLayout>

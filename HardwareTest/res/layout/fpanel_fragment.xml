@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#66666666"
+        android:gravity="center_vertical|left"
+        android:text="前面板测试"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/tvTips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="前面板测试:自行判断硬盘灯,电源灯,复位按钮,开机按钮,网口灯,显示器数量" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="|" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlFpanel1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvFpanel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:text="硬盘灯" />
+
+            <Switch
+                android:id="@+id/swHddLed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:textOff="NG"
+                android:textOn="OK" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFpanel5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvFpanel5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:text="网口灯" />
+
+            <Switch
+                android:id="@+id/swNetLed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:textOff="NG"
+                android:textOn="OK" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFpanel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvFpanel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:text="电源灯" />
+
+            <Switch
+                android:id="@+id/swPowerLed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:textOff="NG"
+                android:textOn="OK" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFpanel4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvFpanel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:text="开机按钮" />
+
+            <Switch
+                android:id="@+id/swPowerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:textOff="NG"
+                android:textOn="OK" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFpanel3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvResetBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:text="复位按钮" />
+
+            <Switch
+                android:id="@+id/swResetBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:textOff="NG"
+                android:textOn="OK" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFpanel6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:text="显示器数量" />
+
+            <Spinner
+                android:id="@+id/spDisplay"
+                style="@android:attr/spinnerDropDownItemStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFpanelAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/tvFpanelAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:text="前面板测试总结果" />
+
+        <TextView
+            android:id="@+id/tvFpanelAllRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="NULL"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#66666666"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPass"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnPass" />
+
+        <Button
+            android:id="@+id/btnFail"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnFail" />
+    </LinearLayout>
+
+</LinearLayout>

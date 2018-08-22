@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#66666666"
+        android:gravity="center_vertical|left"
+        android:text="@string/sim_name"
+        android:textColor="#ffffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85" >
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnState"
+            android:layout_alignParentTop="true"
+            android:text="这是一个SIM卡测试程序" />
+
+        <Button
+            android:id="@+id/btnPing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="Ping" />
+
+        <TextView
+            android:id="@+id/tvHost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnPing"
+            android:layout_alignTop="@+id/btnPing"
+            android:layout_toLeftOf="@+id/tvRes"
+            android:layout_toRightOf="@+id/btnPing"
+            android:gravity="left|center_vertical"
+            android:text="www.baidu.com"
+            android:textSize="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:id="@+id/tvRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvHost"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvHost"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvPingRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnPing"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvInfo"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnState"
+            android:text="NULL" />
+
+        <Button
+            android:id="@+id/btnState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnPing"
+            android:layout_alignParentLeft="true"
+            android:text="SIM状态" />
+
+        <TextView
+            android:id="@+id/tvFinalRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:textSize="28dp"
+            android:text="测试结果:NULL" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#66666666"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPass"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnPass" />
+
+        <Button
+            android:id="@+id/btnFail"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnFail" />
+    </LinearLayout>
+
+</LinearLayout>

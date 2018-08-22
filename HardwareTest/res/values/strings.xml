@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">华北工控硬件检测</string>
+    <string name="result">结果</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="main_fragment_name">硬件检测</string>
+	<string name="version_name">" 版本信息"</string>
+	<string name="pass">成功</string>
+	<string name="fail">失败</string>
+	<string name="sim_name">SIM卡测试</string>
+	<string name="btnPass">正确</string>
+	<string name="btnFail">错误</string>
+	<string name="screen_display_name">屏幕显示测试</string>
+	<string name="screen_display_tips">测试结束,请判断测试结果</string>
+	<string name="screen_display_click_tips">"  请点击屏幕继续"</string>
+	<string name="wlan_addr_name">WLAN地址测试</string>
+	<string name="retest">重测</string>
+	<string name="wlan_ap_name">WLAN AP扫描测试</string>
+	<string name="sdcard_name">播放SD卡上的MP3</string>
+	<string name="play_music">播放音乐</string>
+	<string name="sdcard_tips">播放SD卡上的mp3文件。请将mp3命名为1kHZ.mp3并放在SD卡根目录</string>
+	<string name="stop">停止</string>
+	<string name="headset_loop_name">耳机回环测试</string>
+	<string name="headset_state">1.耳麦状态:</string>
+	<string name="mic_test_tips">3.对着耳机MIC吹气，耳机听筒出声，请判断是否有声。</string>
+	<string name="unchecked">未检测</string>
+	<string name="settings">设置</string>
+	<string name="commit">提交</string>
+	<string name="test_result">测试结果</string>
+	<string name="gpio_test">GPIO测试</string>
+	<string name="com_test">串口测试</string>
+	<string name="test_string">abcdefghijklmnopqrstuvwxyz</string>
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	<string name="nul">NULL</string>
+</resources>

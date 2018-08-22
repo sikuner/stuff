@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2015年6月11日 下午5:35:16                                                        
+
+     HardwareTest    
+     description
+	
+     liguowang                                                                
+     ====================================================================== -->
+<project name="HardwareTest" default="BuildAllHeaders">
+    <description>
+            description
+    </description>
+
+    <!-- ================================= 
+          target: BuildAllHeaders              
+         ================================= -->
+    <target name="BuildAllHeaders">
+        <antcall target="BuildGpioJNIHeader"></antcall>
+		<antcall target="BuildSerialPortHeader"></antcall>
+		<antcall target="BuildSerialPort485Header"></antcall>
+		</target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: BuildGpioJNIHeader                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="BuildGpioJNIHeader">
+		<exec dir="${basedir}/bin/classes" executable="javah">
+			<arg value="-d"/>
+    		<arg value="${basedir}/jni"/>
+    		<arg value="-jni"/>
+    		<arg value="com.norco.utils.GpioJNI"/>
+		</exec>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: BuildSerialPortHeader                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="BuildSerialPortHeader">
+		<exec dir="${basedir}/bin/classes" executable="javah">
+			<arg value="-d"/>
+    		<arg value="${basedir}/jni"/>
+    		<arg value="-jni"/>
+    		<arg value="com.norco.utils.SerialPort"/>
+		</exec>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: BuildSerialPort485Header                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="BuildSerialPort485Header">
+		<exec dir="${basedir}/bin/classes" executable="javah">
+			<arg value="-d"/>
+    		<arg value="${basedir}/jni"/>
+    		<arg value="-jni"/>
+    		<arg value="com.norco.utils.SerialPortJNI"/>
+		</exec>
+    </target>
+    
+</project>
