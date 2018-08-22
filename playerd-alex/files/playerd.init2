@@ -1,0 +1,13 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+
+start() {
+    service_start /usr/bin/start_playerd.sh &
+}
+
+stop() {
+	killall start_playerd.sh
+	service_stop /usr/bin/playerd
+	killall playerd
+}

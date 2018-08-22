@@ -1,0 +1,50 @@
+
+{
+	"dns":[{
+		"nameserver":"127.0.0.1"
+	},{
+		"nameserver":"180.76.76.76"
+	},{
+		"nameserver":"223.5.5.5"
+	},{
+		"nameserver":"119.29.29.29"
+	}],
+	"services":[{
+		"name":"比巴服务",
+		"host":"api.beeba.cn",
+		"action":101,
+		"param":"http://api.beeba.cn/test_speed.mp3",
+		"ip":[{"addr":"182.92.22.180"}]
+	},{
+		"name":"比巴OSS服务",
+		"host":"download.beeba.cn",
+		"action":0,
+		"param":"http://download.beeba.cn/music/78/d8f4dcb3_78.bac",
+		"ip":[{"addr":"120.27.176.26"}]
+	},{
+		"name":"讯飞语音服务",
+		"host":"dev.voicecloud.cn",
+		"action":102,
+		"param":"", 
+		"ip":[{"addr":"59.107.24.13"}]
+	},{
+		"name":"喜马拉雅服务",
+		"host":"ximalaya.com",
+		"action":0,
+		"param":"http://fdfs.xmcdn.com/group11/M06/11/38/wKgDa1VoEESDdXZ9ABeTpKxoi3c058.mp3", 
+		"ip":[{"addr":"125.91.249.26"},{"addr":"183.57.28.211"},{"addr":"106.122.250.217"}]
+	},{
+		"name":"口袋故事服务",
+		"host":"www.idaddy.cn",
+		"action":0,
+		"param":"http://localhost/cgi-bin/luci/api/contents/get_idaddy_url_by_songid?songid=AD0GYAU5", 
+		"ip":[{"addr":"211.152.43.132"}]
+	},{
+		"name":"考拉FM服务",
+		"host":"image.kaolafm.net",
+		"action":0,
+		"param":"http://image.kaolafm.net/mz/audios/201506/8e549005-5c58-4476-85f7-4eb83c940871.mp3 ", 
+		"ip":[{"addr":"14.215.9.82"},{"addr":"183.57.28.62"}]
+	}]
+}
+
